@@ -1,0 +1,18 @@
+{% extends "main/layout.html" %}
+{% load static %}
+   {% block title %}{{ article.title }}{% endblock title %}
+
+
+{% block content %}
+   <div class="features">
+      <div class="view">
+         <h1>{{ article.title }}</h1>
+      <p>{{ article.date }}</p>
+      <p>{{ article.full_text }}</p>
+      <a href="{% url "blogs_delete" article.id%}" class="blog_next">Удалить |</a>
+      <a href="{% url "blogs_update" article.id%}" class="blog_next"> Редактировать</a>
+      </div>
+   </div>
+
+   
+{% endblock content %}

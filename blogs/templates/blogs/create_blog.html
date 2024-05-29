@@ -1,0 +1,22 @@
+{% extends "main/layout.html" %}
+{% load static %}
+
+{% block title %}Создание блога{% endblock title %}
+
+
+{% block content %}
+   <div class="features">
+      <h1>Форма по добавлению блога</h1>
+      <form method="post">
+         {% csrf_token %}
+         {{form.title}}<br>
+         {{form.anons}}<br>
+         {{form.full_text}}<br>
+         {{form.date}}<br>
+         <span>{{ error }}</span>
+         <button class="button1" type="submit">Добавить блог</button>
+      </form>
+   </div>
+
+   
+{% endblock content %}

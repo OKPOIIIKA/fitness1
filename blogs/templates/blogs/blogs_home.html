@@ -1,0 +1,24 @@
+{% extends "main/layout.html" %}
+{% load static %}
+   {% block title %}Блог{% endblock title %}
+
+
+{% block content %}
+   <div class="features">
+      <h1>Блоги</h1>
+      {% if blogs %}
+         {%for el in blogs%}
+            <div class="alert">
+               <h3>{{ el.title }}</h3>
+               <p>{{ el.anons }}</p>
+               <a href="{% url "blogs_detail" el.id %}" class="blog_next">Читать далее</a>
+            </div>
+         {%endfor%}
+      {% else %}
+            <p>Блоги отсутствуют</p>
+      {% endif %}
+      <a href="{% url "create_blog" %}"><input type="button" class="button1" value="Добавить блог"></a>
+   </div>
+
+   
+{% endblock content %}
