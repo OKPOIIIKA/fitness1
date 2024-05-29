@@ -1,0 +1,11 @@
+.login_user
+{
+   background-color: #1c1b1e;
+   text-align: center;
+}
+
+.login_user button
+{
+   margin-top: 10px;
+   margin-bottom: 0;
+}

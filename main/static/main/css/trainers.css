@@ -1,0 +1,62 @@
+.trainers
+{
+    background-color: #f1f4f6;
+    width: 100%;
+} 
+.desctrainers
+{
+    padding-top: 50px;
+}
+.all_trainers
+{
+    width: 100%;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+.article2
+{
+    display: inline-block;
+    width: 80%;
+	vertical-align: top;
+    text-align: center;
+    margin-right: 5%;
+}
+.article2:last-child
+{
+    margin-right: 0;
+}
+h3
+{
+    color: #fa7c30;
+}
+.trainer3
+{
+    height: 379px;
+}
+
+@media only screen and (max-width: 1080px) 
+{ 
+    .all_trainers
+    {
+        display: block;
+        text-align: center;
+    }
+    .article2
+    {
+        margin-right: 0;
+    }
+
+}
+@media only screen and (max-width: 380px) 
+{ 
+    .trainers .container
+    {
+        padding: 0;
+    }
+    .article2 img
+    {
+        width: 100%;
+    }
+}

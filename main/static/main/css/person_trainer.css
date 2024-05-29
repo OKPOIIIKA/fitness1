@@ -1,0 +1,48 @@
+.person_trainer 
+{
+    width: 100%; 
+    background-image: url("../img/persontrainer.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+}
+
+.train
+{
+    padding-top: 10%;
+    font-size: 36px;
+    font-weight: 400;
+}
+.person
+{
+    font-size: 70px;
+    font-weight: 700;
+    margin: 50px auto;
+}
+.person_trainer input[type=button]
+{
+    margin-bottom: 10%;
+}
+@media only screen and (max-width:768px)
+{
+    .person_trainer 
+    {
+        height: 50%;
+    }
+}
+@media only screen and (max-width:508px)
+{
+    .train
+    {
+        font-size: 30px;
+    }
+.person
+    {
+        font-size: 45px;
+    }
+}
+

@@ -1,0 +1,68 @@
+.features
+{
+   background-color: #1c1b1e;
+   text-align: center;
+}
+.features h1
+{
+   padding: 8% 0 0 0;
+   font-size: 45px;  
+}
+
+.features h3
+{
+   padding-top: 3%;
+}
+
+.features .button1
+{
+   margin-top: 25px;
+   margin-bottom: 0;
+}
+
+.alert
+{
+   width: 50%;
+   margin: auto;
+}
+
+.blog_next
+{
+   text-decoration:solid;
+   cursor: pointer;
+   list-style: none;
+   color: #fa7c30;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+   font-size: 25px;
+
+}
+
+.form
+{
+   width: 50%;
+   height: 50px;
+   margin: 15px;
+}
+.form1
+{
+   height: 100px;
+}
+
+.list_of_forms
+{
+   width: 50%;
+   margin-bottom: 1.5%;
+}
+
+.forms1
+{
+   height: 40px;
+}
+
+.view
+{
+   background-color: #1c1b1e;
+   width: 70%;
+   margin: auto;
+}

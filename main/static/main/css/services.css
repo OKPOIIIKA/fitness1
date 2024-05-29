@@ -1,0 +1,99 @@
+.services
+{
+    width: 100%;
+    margin: 100px auto;
+}
+
+.p2
+{
+    font-size: 14px;
+    font-weight: 400;
+    color:rgb(119, 119, 119);
+    margin-bottom: 65px;
+}
+
+.all_services
+{
+    width: 100%;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.article1
+{
+    
+    background-color: #f1f4f6;
+    white-space: normal;	
+	display: inline-block;
+	width: 80%;
+	vertical-align: top;
+	margin-right: 5%;
+	font-size: 14px;
+    
+}
+.article1:last-child {
+	margin-right: 0 ;
+}
+.article1 img
+{
+    width: 100%;
+}
+.p3
+{
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+.article1 input[type=button]
+    {
+        margin: 10% auto;
+        bottom: 0;
+    }
+
+@media only screen and (max-width: 1024px) 
+{ 
+    .article1 input[type=button]
+    {
+        padding: 15px 33px;
+        font-size: 12px;
+        vertical-align: bottom;
+    }
+}
+@media only screen and (max-width: 768px) 
+{ 
+    .article1 input[type=button]
+    {
+        padding: 12px 17px;
+        font-size: 10px;
+        vertical-align: bottom;
+    }
+    .all_services
+    {
+        display: block;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .p3
+    {
+        text-align: left;
+        padding: 0 5%;
+    }
+    .article1
+    {
+        margin-top: 0;
+        margin-bottom: 20px;
+        margin-right: 0;
+        width: 65%;
+    }
+    
+    .article1 input[type=button]
+    {
+        padding: 15px 33px;
+        font-size: 12px;
+    }
+}

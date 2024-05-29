@@ -1,0 +1,162 @@
+footer
+{
+    background-color: #1c1b1e;
+}
+.con1
+{
+    max-width: 1332px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+.foot1
+{
+    width: 30%;
+}
+.foo1
+{
+    margin: 10% 0 5% 0;
+    font-size: 14px;
+    font-weight: 400;
+    width: 90%;
+    line-height: 30px;
+}
+.follow
+{
+    display: flex;
+    margin: 5% 0;
+}
+.us
+{
+    margin-right: 20px;
+}
+.social_networks img
+{
+    margin: 5px;
+}
+.foot2
+{
+    width: 34%;
+}
+.foot3
+{
+    width: 278px;
+}
+.h4
+{
+    margin: 5px 0 40px 0;
+}
+.blog_items
+{
+    display: flex;
+    margin-bottom: 5%;
+}
+.blog_items img
+{
+    margin-right: 15px;
+    object-fit: contain;
+}
+.insta
+{
+    padding-bottom: 5px;
+}
+.lower
+{
+    color: #fa7c30;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+    padding: 40px;
+}
+
+@media only screen and (max-width: 863px) 
+{
+    .con1
+    {
+        display: inline-block;
+        padding-top: 5%;
+    }
+    .footer1
+    {
+        width: 100%;
+    }
+    .foo1
+    {
+        margin: 0;
+    }
+    .follow
+    {
+        margin: 2% 0 5% 0;
+    }
+    .blog_items
+    {
+        margin-bottom: 3%;
+    }
+    .h4
+    {
+        margin: 10px 0 20px 0;
+        letter-spacing: 2px;
+        position: relative;
+        padding-left: 30px;
+        cursor: pointer;
+        
+    }
+    .h4::before,
+    .h4::after
+    {
+        content: '';
+        width: 14px;
+        height: 1px;
+        background-color: #fff;
+        position: absolute;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+    .h4::before
+    {
+        transform: rotate(40deg);
+        left: 0;
+    }
+    .h4::after
+    {
+        transform: rotate(-40deg);
+        left: 10.2px;
+    }
+    .h4.active::before,
+    .h4.active::after
+    {
+        background-color: #fa7c30;
+    }
+    .h4.active::before
+    {
+        transform: rotate(-40deg);
+    }
+
+    .h4.active::after
+    {
+        transform: rotate(40deg);
+    }
+
+    .aaa, .blogs, .insta
+    {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 864px) 
+{
+    .aaa, .blogs, .insta
+    {
+        display: block;
+        overflow: visible;
+    }
+}
+
+@media only screen and (max-width: 380px) 
+{
+    .insta
+    {
+        text-align: center;
+    }
+}

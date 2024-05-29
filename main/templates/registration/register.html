@@ -1,0 +1,18 @@
+{% extends "main/layout.html" %}
+{% load static %}
+{% block title %}Регистрация{% endblock title %}
+{% block content %}
+   <div class="features">
+   <h1>Регистрация</h1>
+
+   {% if form.errors %}
+      <p> {{ form.errors.error }} </p>
+   {% endif %}
+   <form action="{% url "register" %}" method = "post" class="register_user">
+      {{ form }}
+      {% csrf_token %}
+      <button type="submit" class="button1">Зарегистрироваться</button>
+   </form>
+</div>
+   
+{% endblock content %}
